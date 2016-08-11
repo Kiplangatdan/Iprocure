@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+<RelativeLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:dividerPadding="1dp"
+    android:fitsSystemWindows="true"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="2dp"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:textAlignment="inherit" >
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:fitsSystemWindows="true"
+            android:gravity="left"
+            android:text="Product Name"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:fitsSystemWindows="true"
+            android:gravity="center"
+            android:text="Type"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Price"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+<TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name"
+            android:fitsSystemWindows="true"
+            android:gravity="left"
+            android:text="@string/name"/>
+
+        <TextView
+            android:id="@+id/type"
+            android:gravity="center"
+            android:text="@string/type" />
+
+        <TextView
+            android:id="@+id/price"
+            android:gravity="center_horizontal"
+            android:text="@string/price" />
+
+        </TableRow>
+        
+    </TableLayout>
+
+</RelativeLayout>
+</LinearLayout>
